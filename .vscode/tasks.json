@@ -1,0 +1,38 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "pasmo",
+            "type": "shell",
+            "command": "pasmo",
+            "args": [
+                "--name",
+                "${input:name}",
+                "--tapbas",
+                "${input:project}/${input:name}.asm",
+                "${input:project}/${input:name}.tap"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+        {
+            "id":"project",
+            "description": "Name of the project folder",
+            "default": "holamundo",
+            "type": "promptString"
+        },
+        {
+            "id":"name",
+            "description": "Name of the asm file",
+            "default": "holamundo",
+            "type": "promptString"
+        }
+    ]
+}
