@@ -9,7 +9,7 @@
             "command": "pasmo",
             "args": [
                 "--name",
-                "${input:name}",
+                "${input:project}",
                 "--tapbas",
                 "${input:project}/${input:name}.asm",
                 "${input:project}/${input:name}.tap"
