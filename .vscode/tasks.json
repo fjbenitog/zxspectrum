@@ -23,13 +23,13 @@
     ],
     "inputs": [
         {
-            "id":"project",
+            "id": "project",
             "description": "Name of the project folder",
             "default": "holamundo",
             "type": "promptString"
         },
         {
-            "id":"name",
+            "id": "name",
             "description": "Name of the asm file",
             "default": "holamundo",
             "type": "promptString"
